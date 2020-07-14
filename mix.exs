@@ -38,7 +38,7 @@ defmodule ExWorkflow.MixProject do
       name: "ex_workflow",
       files: ~w[lib priv .formatter.exs mix.exs README* readme* LICENSE*
         license* CHANGELOG* changelog* src],
-      license: ["MIT"],
+      licenses: ["MIT"],
       links: %{
         "GitHub" => "git@github.com:Aetherus/ex_workflow.git"
       }
