@@ -25,7 +25,8 @@ defmodule ExWorkflow.MixProject do
     [
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
-      {:ecto, "~> 3.0"}
+      {:ecto, "~> 3.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
@@ -36,11 +37,10 @@ defmodule ExWorkflow.MixProject do
   defp package do
     [
       name: "ex_workflow",
-      files: ~w[lib priv .formatter.exs mix.exs README* readme* LICENSE*
-        license* CHANGELOG* changelog* src],
+      files: ~w[lib .formatter.exs mix.exs README*],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "git@github.com:Aetherus/ex_workflow.git"
+        "GitHub" => "https://github.com/Aetherus/ex_workflow"
       }
     ]
   end
