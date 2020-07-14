@@ -152,7 +152,7 @@ defmodule ExWorkflow do
     end
   end
 
-  def def_event_failover_for_changed_state(event, state_field) do
+  defp def_event_failover_for_changed_state(event, state_field) do
     quote location: :keep do
       def unquote(event)(
         %Ecto.Changeset{
@@ -179,7 +179,7 @@ defmodule ExWorkflow do
     end
   end
 
-  def def_event_failover_for_unchanged_state(event, state_field) do
+  defp def_event_failover_for_unchanged_state(event, state_field) do
     quote location: :keep do
       def unquote(event)(
         %Ecto.Changeset{
@@ -193,7 +193,7 @@ defmodule ExWorkflow do
     end
   end
 
-  def def_event_overridable(event) do
+  defp def_event_overridable(event) do
     quote location: :keep, bind_quoted: [event: event] do
       defoverridable [{event, 1}, {event, 2}]
     end
