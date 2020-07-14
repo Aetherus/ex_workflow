@@ -1,6 +1,6 @@
 # ExWorkflow
 
-**TODO: Add description**
+A minimal workflow implementation for Ecto schemas.
 
 ## Installation
 
